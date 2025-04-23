@@ -1,0 +1,97 @@
+.movie-detail-container {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Title */
+.movie-detail-container h1 {
+  color: #ffdd59;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Poster Image */
+.movie-detail-container img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 5px solid #ffdd59;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.movie-detail-container img:hover {
+  transform: scale(1.03);
+}
+
+/* Sub-title */
+.movie-detail-container h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+/* Info paragraphs */
+.movie-detail-container p {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Buttons Section */
+.movie-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.nav-btn {
+  background: #ff4757;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background: #e84118;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Entry Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
